@@ -52,7 +52,7 @@ export default function RecordDetails({ params }) {
       }
     }
     loadRecord()
-  }, [])
+  }, [params.id])
 
   const [status, setStatus] = React.useState(null)
 
