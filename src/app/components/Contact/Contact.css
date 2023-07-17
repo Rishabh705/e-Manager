@@ -1,0 +1,22 @@
+.footer-contact {
+    background: #0d0f1e;
+  }
+  
+  .footer-contact h3 {
+    margin-top: 1rem;
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  .contact {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .contact a {
+    margin-inline: 0.4rem;
+  }
+  
+  .contact :hover {
+    transform: scale(1.2)
+  }

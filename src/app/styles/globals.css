@@ -1,0 +1,11 @@
+.main-body{
+    /* position: relative; */
+    display: flex;
+    flex-flow: column;
+  }
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background: #F18701;
+    min-height: 100vh;
+}

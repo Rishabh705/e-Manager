@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hdr {
+  position: sticky;
+  width: 100%;
+  height: 54px;
+  background: #e1e3e6;
+  z-index: 10;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.hdt {
+  display: inline-block;
+  padding: 5px 6px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.hdt,
+a {
+  color: #f17300;
+  text-decoration: none;
+}
+
+.hdt h3{
+  font-weight: 600;
+}
+
+.loginbtn {
+  border: transparent;
+  margin-right: 1rem;
+  height: 35px;
+  width: 75px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  background-color: #f39d2d;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
+.loginbtn a {
+  color: #0d0f1e;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 0.5rem;
+  }
+  
+  .loginbtn:hover {
+  transform: translateY(-2px);
+  background-color: #f17300;
+}
+
+/*profile icon*/
+.user-profile{
+  margin-right: 1rem;
+}
+
+.user-profile:hover .navlist{
+  display: block;
+}
+
+.profile-btn button{
+  border: transparent;
+  margin-top: 1px;
+  height: 52px;
+}
+
+
+
+.profile_icon{
+  background-color: #e1e3e6;
+  height: 52px;
+}
+
+.profile_icon img{
+  border-radius: 2rem;
+  margin-top: 0.5px;
+}
+
+.navlist {
+  position: absolute;
+  right: 1rem;
+  bottom: -6.8rem;
+  background-color: #11af4d;
+  display: none;
+  width: 17rem;
+  transform-origin: top center;
+}
+.navlist .profile_icon{
+  background-color: #11af4d;
+}
+
+.navlist_user_info{
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.navlist_user_info span img{
+  border-radius: 2rem;
+}
+
+.user_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user_info p, .navlist-links button p{
+  font-size: 1rem;
+}
+
+
+.navlist-links button{
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  /* background-color:#0d0f1e; */
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.navlist-links button:hover{
+  background-color: #d4d5d7;
+}
+
+.navlist-links button svg{
+  position: absolute;
+  left: 4.5rem;
+  top: 8px;
+}

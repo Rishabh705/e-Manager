@@ -1,0 +1,25 @@
+.query-drop{
+    position: relative;
+    display: flex;
+    width: 55%;
+}
+
+.select-cont{
+    width: 55%;
+}
+
+.select-cont select{
+    height: 1.5rem;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(238, 235, 235);
+}
+
+select > option{
+    background-color: rgb(209, 208, 207);
+    overflow-y: auto;
+    height: 100px;
+    border: none;
+}
+

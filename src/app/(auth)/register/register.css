@@ -1,0 +1,96 @@
+
+.register_h3{
+  font-family:  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  width: auto;
+}
+
+.register_container1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: rgb(203, 209, 202);
+  align-items: center;
+  height: 83.5vh;
+}
+
+.register_page {
+  display: flex;
+  flex-flow: column;
+  padding: 3rem;
+  justify-content: space-between;
+  width: 27rem;
+  height: 29rem;
+  align-items: center;
+  background-color: rgb(218, 222, 225);
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.25);
+}
+.form{
+  height: 23rem;
+  padding-top: 2rem;
+}
+
+.hr_1{
+  margin-top: 5px;
+} 
+
+.userdata {
+  /* border : 2px solid yellow; */
+  display: flex;
+  flex-flow: column;
+  padding-top: 1.5rem;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.register_container2 {
+  margin-top: 1.5rem;
+}
+
+.register_container2 ul {
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+
+.register_container2 li a {
+  color: #0d0f1e;
+  text-decoration: underline;
+}
+
+.register_container2 li a:hover,
+.register_container2 li a:active {
+  color: #fd8719;
+}
+.reg_usrnm,.reg_pswd{
+  display: flex;
+  align-items: center;
+}
+.reg_unm,.reg_pass {
+  height: 2rem;
+  width: 15rem;
+  padding: 0.5rem 0.5rem;
+  border: none;
+}
+
+.reg_unm:focus,
+.pass:focus {
+  box-shadow: 0px 0px 2px 5px rgb(128, 183, 241);
+}
+
+.reg_submit {
+  border: none;
+  background-color: #e88f3b;
+  cursor: pointer;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+  box-shadow: 0.5px 2px 5px rgba(0,0,0,0.25);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.reg_submit:hover {
+  background-color: #f17300;
+}
+
+/* media queries */

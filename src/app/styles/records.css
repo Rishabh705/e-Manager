@@ -1,0 +1,99 @@
+.query-container3 a {
+    color: black;
+    width: 100%;
+}
+
+.record-tile {
+    display: flex;
+    margin-bottom: 1.5px;
+    border: 1px solid black;
+}
+
+.record-tile button {
+    border: none;
+    background-color: #f56666;
+    width: 35px;
+}
+
+.record-tile-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #eaecee;
+    padding: 5px;
+    width: 100%;
+}
+
+.record-tile-div h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.query-main-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.query-container1 {
+    display: flex;
+    height: 2.5rem;
+    background-color: #fd9a2f;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.select-container select {
+    height: 1.5rem;
+    padding: 3px;
+    border: none;
+    font-size: 14px;
+    background-color: #3fb4ee;
+}
+
+.table_input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table_input_div input {
+    width: 80%;
+    border: none;
+    height: 1.5rem;
+    padding-left: 8px;
+    border-radius: 0px;
+    margin: 0;
+}
+
+.query-container2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.query-container3 {
+    overflow-y: scroll;
+    height: 87vh;
+    margin-top: 0.4rem;
+    width: 97%;
+    display: flex;
+    flex-flow: column;
+}
+
+.query-container4 {
+    width: 100%;
+    background-color: #fba243;
+    box-shadow: 2px 4px 5px rgb(53, 52, 52);
+    z-index: 1;
+}
+
+.query-container4 section {
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

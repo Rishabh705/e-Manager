@@ -1,0 +1,87 @@
+.add_form_container {
+    background-color: #f3ece1;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 88%;
+    display: flex;
+    flex-flow: column;
+    gap: 1.9rem;
+    padding: 4rem;
+}
+
+
+input {
+    width: 15rem;
+    height: 2.3rem;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+
+.extra-input{
+    padding: 0.5rem;
+}
+
+.detail-box h3{
+    font-size: 1rem;
+    position: absolute;
+    top: -0.66rem;
+    background-color: rgb(243, 236, 225);
+    padding: 0 7px 0 5px;
+    /* border: 1px solid blue; */
+}
+
+.detail-box{
+    padding: 0.5rem;
+    position: relative;
+    border: 1px solid rgb(190, 187, 187);
+}
+.detail-box2{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.submit_div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+    /* border: 1px solid green; */
+}
+.submit_div img{
+    width: 30px;
+    height: 30px;
+}
+
+.submit_div button {
+    border: none;
+    background-color: #e88f3b;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.25);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.submit_div button:hover {
+    background-color: #f17300;
+}
+
+
+.success_msg {
+    color: #a8e48a;
+}
+
+.error_msg {
+    color: red;
+}
