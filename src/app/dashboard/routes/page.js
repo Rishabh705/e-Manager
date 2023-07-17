@@ -17,7 +17,7 @@ export default function AllRoutes() {
     })
 
     //filtered data from hook afer passing URL and filter function
-    const [filteredData,setData] = useFetchedData(`${process.env.NEXT_PUBLIC_URL}/api/routes`, filter)
+    const [filteredData,setData] = useFetchedData(`/api/routes`, filter)
 
     //search controlled input
     const handleFilterChange = (e) => {
