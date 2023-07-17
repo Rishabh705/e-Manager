@@ -32,7 +32,7 @@ export default function RecordDetails({ params }) {
   React.useEffect(() => {
     async function loadRecord() {
       try {
-        const data = await getRecord(`${process.env.NEXT_PUBLIC_URL}/api/inspections`,params.id)
+        const data = await getRecord(`/api/inspections`,params.id)
         setFormData(prev => ({
           ...prev,
           id: data.id,
