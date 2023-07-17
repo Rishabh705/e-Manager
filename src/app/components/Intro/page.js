@@ -22,13 +22,12 @@ export default function Intro() {
             </div>
 
             <div className={`intro_container3 ${quicksand.className}`}>
-                <p>With the help of this management tool you can create and structure your own databse and perform various operations on it easily. Operations include -</p>
+                <p>With the help of this management tool you can perform various operations on tables easily. Operations include -</p>
                 <ul className="intro_operlist">
                     <li className="intro_l">Adding a new Record.</li>
                     <li className="intro_l">Updating a Record.</li>
                     <li className="intro_l">Deleting a record.</li>
                     <li className="intro_l">Displaying records as per query.</li>
-                    <li className="intro_l">Performing basic query operations.</li>
                 </ul>
                 <p> This tool allows you to manage your records in an efficient way. Sign in and get started.</p>
                 <button className='get_started'>
