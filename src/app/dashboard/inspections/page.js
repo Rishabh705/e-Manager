@@ -17,7 +17,7 @@ export default function AllRecords() {
   })
 
   //filtered data from hook afer passing URL and filter function
-  const [filterdData,setData] = useFetchedData(`${process.env.NEXT_PUBLIC_URL}/api/inspections`, filter)
+  const [filterdData,setData] = useFetchedData(`/api/inspections`, filter)
   
   //search controlled input
   const handleFilterChange = (e) => {
