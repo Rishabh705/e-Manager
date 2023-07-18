@@ -37,7 +37,7 @@ export default function AllRoutes() {
     //displaying records
     const cards = filteredData ? filteredData.map((item) => (
         <div className='record-tile' key={item._id}>
-            <Link href={`/dashboard/routes/${item._id}`}>
+            <Link href={`/dashboard/tables/routes/${item._id}`}>
                 <Record
                     col1={item.airline.name}
                     col2={item.src_airport}

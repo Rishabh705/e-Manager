@@ -14,18 +14,17 @@
   flex-flow: row;
   justify-content: space-between;
 }
-
+a{
+  text-decoration: none;
+}
 .hdt {
-  display: inline-block;
-  padding: 5px 6px;
+  display: flex;
+  padding: 0px 6px;
   font-size: 1.8rem;
   cursor: pointer;
-}
-
-.hdt,
-a {
   color: #f17300;
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .hdt h3{
@@ -138,4 +137,10 @@ a {
   position: absolute;
   left: 4.5rem;
   top: 8px;
+}
+
+@media screen and (max-width:575px) {
+  .hdt h3{
+    font-size: 2rem;
+  }
 }

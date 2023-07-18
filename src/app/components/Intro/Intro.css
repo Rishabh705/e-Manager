@@ -1,8 +1,7 @@
-
-
-.loginbtn{
+.loginbtn {
   display: block;
 }
+
 .name {
   font-weight: 700;
   color: #141414;
@@ -36,10 +35,9 @@
 
 .intro_container3 {
   border-radius: 1rem 1rem 0rem 0rem;
-  padding: 6rem 5rem;
+  padding: 5rem 4rem;
   display: flex;
   flex-flow: column;
-  height: 40rem;
   background-color: #f0f8ff;
 }
 
@@ -68,27 +66,29 @@ p {
   width: 40%;
   /* border : 2px solid yellow; */
 }
-.hero_img{
+
+.hero_img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero_img img{
+
+.hero_img img {
   /* border : 2px solid yellow; */
   border-radius: 1rem;
-  width: 320px;
+  max-width: 320px;
   height: 320px;
 }
 
 .get_started {
+  position: relative;
+  bottom: -2rem;
   border: transparent;
   border-radius: 0.2rem;
-  margin-right: 1rem;
   height: 35px;
   width: 110px;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 3rem;
   background-color: #f39d2d;
   transition-property: transform;
   transition-duration: 0.25s;
@@ -97,13 +97,58 @@ p {
 
 .get_started a {
   color: #0d0f1e;
-    width: 100%;
-    height: 100%;
-    display: block;
-    /* border: 1px solid red; */
-    padding-top: 0.5rem;
+  height: 100%;
+  display: block;
+  /* border: 1px solid red; */
+  padding-top: 0.5rem;
 }
 
 .get_started:hover {
   background-color: #f17300;
+}
+
+/* media queries */
+@media screen and (max-width:575px) {
+  .intro_container1{
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .intro_h1 {
+    width: 100%;
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro_container2{
+    width: 100%;
+  }
+  .hero_img img {
+    width: 250px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+  .intro_h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero_img img {
+    max-width: 77%;
+    height: 0%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .intro_h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero_img img {
+    max-width: 75%;
+    height: 0%;
+  }
 }

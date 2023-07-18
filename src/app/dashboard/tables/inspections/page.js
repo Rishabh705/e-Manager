@@ -37,7 +37,7 @@ export default function AllRecords() {
   //displaying records
   const cards = filterdData ? filterdData.map((item) => (
     <div className="record-tile" key={item._id}>
-      <Link href={`/dashboard/inspections/${item._id}`}>
+      <Link href={`/dashboard/tables/inspections/${item._id}`}>
         <Record col1={item.id} col2={item.business_name} col3={item.certificate_number} />
       </Link>
       <Delete id={item._id} path="inspections" setData={setData}/>

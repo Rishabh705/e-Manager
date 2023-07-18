@@ -1,44 +1,73 @@
 .database {
-    display: flex;
-    min-height: 85vh;
-    background-color: rgb(255, 255, 255);}
+  display: flex;
+  min-height: 85vh;
+  background-color: rgb(255, 255, 255);
+}
 
 .database h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 6.5rem;
-    box-shadow: 0px 2px 5px rgb(87, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+  box-shadow: 0px 2px 5px rgb(87, 86, 86);
 }
 
 .database_nav {
-    background-color: aliceblue;
+  background-color: aliceblue;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 5px 0px 5px rgb(87, 86, 86);
+}
+
+.database_nav ul {
+  display: flex;
+  padding: 5rem 0rem 2rem 0rem;
+  flex-direction: column;
+  font-size: 1.4rem;
+  list-style-type: none;
+  width: 90%;
+}
+
+.database_nav li {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.database_nav a {
+  color: black;
+}
+
+.database_nav a:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+/* media queries */
+@media screen and (max-width:575px) {
+  .database_nav {
+    display: none;
+  }
+}
+@media screen and (min-width:576px) {
+  .database_nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .database_nav {
     display: flex;
-    width: 25%;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    box-shadow: 5px 0px 5px rgb(87, 86, 86);
+  }
+  .database h2{
+    font-size: 1.1rem;
+  }
 }
 
-.database_nav ul{
-    display: flex;
-    padding: 5rem  0rem 2rem 0rem;
-    flex-direction: column;
-    font-size: 1.4rem;
-    list-style-type: none;
-    width: 90%;
-}
-.database_nav li{
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.database_nav a{
-    color: black;
-}
-
-.database_nav a:hover{
-    background-color: rgb(175, 175, 175);
+@media screen and (min-width: 992px) {
+  .database h2{
+    font-size: 1.5rem;
+  }
 }

@@ -1,22 +1,67 @@
 .dashboard {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: aliceblue;
 }
 
-.dashboard h2 {
-    font-size: 2rem;
-    align-items: normal;
-    width: auto;
-    height: auto;
-    box-shadow: none;
-    margin-bottom: 5rem;
+.dashboard section{
+  min-height: 72vh;
+  margin-top: 1.9rem;
+  display: flex;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.dashboard h2{
+  height: 60px;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow:-2px 1px 5px rgb(160, 160, 160); ;
+}
+.dashboard h3{
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-size: 1.4rem;
 }
 
-.dashboard_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.table-boxes{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 30px;
+  column-gap: 25px;
+  justify-content: space-around;
 }
+.cards{
+  height: 10rem;
+  width: 15rem;
+  color: black;
+  background-color: #f5ca91;
+  box-shadow: 2px 3px 5px rgb(164, 163, 163);
+  border-radius: 4px;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.cards h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.cards h5{
+  text-align: center;
+  padding-top: 40px;
+}
+.cards:hover {
+  transform: scale(1.05);
+}
+
+
+/* media queries */
+@media screen and (max-width:575px) {}
+
+@media screen and (min-width:576px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {}
