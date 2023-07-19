@@ -20,6 +20,7 @@ export default function Menuitems(props) {
 
   return (
     <div className='query-drop'>
+      <h5>Query:</h5>
       <div className="select-cont">
         <select value={props.query} onChange={props.onQueryChange} name='query' >
           <option value="">--Choose Query--</option>

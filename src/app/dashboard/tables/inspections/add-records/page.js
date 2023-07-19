@@ -170,7 +170,7 @@ export default function AddRecord() {
             <div>
               City:
               <input type="text" name="city"
-                placeholder="Enter your phone"
+                placeholder="Enter city"
 
                 value={formdata.address.city}
                 onChange={handleChange}
@@ -182,7 +182,7 @@ export default function AddRecord() {
             <div>
               Zip:
               <input type="number" name="zip"
-                placeholder="Enter your phone"
+                placeholder="Enter zip code"
 
                 value={formdata.address.zip}
                 onChange={handleChange}
@@ -194,7 +194,7 @@ export default function AddRecord() {
             <div>
               Street:
               <input type="text" name="street"
-                placeholder="Enter your phone"
+                placeholder="Enter street"
                 value={formdata.address.street}
                 onChange={handleChange}
                 required
@@ -205,7 +205,7 @@ export default function AddRecord() {
             <div>
               Number:
               <input type="number" name="number"
-                placeholder="Enter your phone"
+                placeholder="Enter number"
                 value={formdata.address.number}
                 onChange={handleChange}
                 required

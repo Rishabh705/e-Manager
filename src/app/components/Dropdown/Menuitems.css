@@ -4,8 +4,14 @@
     width: 55%;
 }
 
+.query-drop h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .select-cont{
-    width: 55%;
+    width: 80%;
 }
 
 .select-cont select{
@@ -23,25 +29,23 @@ select > option{
     border: none;
 }
 
-@media screen and (max-width:575px) {
-
-}
-
-@media screen and (max-width: 767px) {
-
-}
 /* media queries */
+
 @media screen and (max-width:575px) {
+    .query-drop{
+        width: 40%;
+        padding-left: 10px;
+    }
     .select-cont{
-        padding-left: 1rem;
+        padding-left: 0.3rem;
     }
 }
 
 @media screen and (min-width: 576px) {
     .select-cont{
-        padding-left: 1rem;
+        padding-left: 0.3rem;
     }
-}
-@media screen and (max-height:425px) and (min-aspect-ratio:7/4) {
-
+    .query-drop{
+        width: 40%;
+    }
 }

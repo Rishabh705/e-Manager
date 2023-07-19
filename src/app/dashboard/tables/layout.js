@@ -22,6 +22,11 @@ export default function DatabaseLayout({ children }) {
                 </ul>
             </nav>
             <div className='table-layout-nav'>
+                <div className="hamburger-menu">
+                    <input type="checkbox" class="toggler"/>
+                    <div class="hamburger"><div></div></div>
+                    Table Name
+                </div>
                 <nav className='table-nav'>
                     <ul>
                         <li>
