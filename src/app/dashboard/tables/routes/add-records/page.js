@@ -184,7 +184,7 @@ export default function AddRecord() {
         <div className='extra-input'>
           Codeshare:
           <input type="text" name="codeshare"
-            placeholder="Code shared?"
+            placeholder="Code shared?(Y/N)"
             value={formdata.codeshare}
             onChange={handleChange}
             required

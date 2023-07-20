@@ -1,9 +1,9 @@
 import React from 'react'
 import "@/app/styles/dashboard.css"
-import AllRecords from './inspections/page'
+import InspectionLayout from './inspections/layout'
 
 export default function DatabasePage() {
   return (
-    <AllRecords/>
+    <InspectionLayout/>
   )
 }

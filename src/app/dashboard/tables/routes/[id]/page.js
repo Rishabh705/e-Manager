@@ -66,7 +66,7 @@ export default function RecordDetails({ params }) {
   }
 
   function change() {
-    router.push("/dashboard/routes")
+    router.push("/dashboard/tables/routes")
   }
   async function handleDelete() {
     try {
@@ -221,7 +221,7 @@ export default function RecordDetails({ params }) {
         <div className='extra-input'>
           Codeshare:
           <input type="text" name="codeshare"
-            placeholder="Code shared?"
+            placeholder="Code shared?(Y/N)"
             value={formdata.codeshare}
             onChange={handleChange}
             required

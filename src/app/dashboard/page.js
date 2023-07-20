@@ -11,11 +11,9 @@ export default function DatabasePage() {
         <div className='table-boxes'>
           <Link href="/dashboard/tables/inspections" className="cards">
             <h4>Inspections</h4>
-            <h5>Total records</h5>
           </Link>
           <Link href="/dashboard/tables/routes" className="cards">
             <h4>Routes</h4>
-            <h5>Total records</h5>
           </Link>
         </div>
       </section>

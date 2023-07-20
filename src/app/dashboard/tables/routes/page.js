@@ -12,7 +12,7 @@ export default function AllRoutes() {
 
     //will contain search query
     const [filter, setFilter] = React.useState({
-        filter: { search: '', filterValue: 'airline' },
+        filter: { search: '', filterValue: 'airline.name' },
         tableQuery: { query: '', queryValue: '' }
     })
 

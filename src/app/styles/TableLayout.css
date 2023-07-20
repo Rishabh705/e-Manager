@@ -7,6 +7,7 @@
 }
 
 .table-layout-nav nav {
+    position: relative;
     background-color: #f5952e;
     display: flex;
     justify-content: center;
@@ -259,13 +260,13 @@
     /* AND ROTATING THE TOP AND BOTTOM LINES :  */
     .toggler:checked+.hamburger>div::before {
         top: 0;
-        transform: rotate(45deg);
+        transform: rotate(-315deg);
         background: black;
     }
 
     .toggler:checked+.hamburger>div::after {
         top: 0;
-        transform: rotate(135deg);
+        transform: rotate(315deg);
         background: black;
     }
 

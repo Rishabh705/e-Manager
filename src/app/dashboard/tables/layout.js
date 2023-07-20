@@ -6,7 +6,6 @@ import { redirect } from "next/navigation"
 import "@/app/styles/Database.css"
 import "@/app/styles/TableLayout.css"
 import { mulish } from '@/app/fonts'
-import NavLink from "@/app/components/Navlink/Navlink"
 import VerticalNav from "@/app/components/Navlink/VerticalNav"
 export default function DatabaseLayout({ children }) {
 
@@ -16,14 +15,7 @@ export default function DatabaseLayout({ children }) {
             redirect(`/login?callbackUrl=/dashboard`)
         }
     })
-
-    const connected_tables = ["Inspections", "Routes"] //tables to be connected     
-    const tables = connected_tables.map(table => {
-        return (
-            <VerticalNav href={`/dashboard/tables/${table.toLowerCase()}`} label={<li key={table}>{table}</li>} key={table} />
-        )
-    })
-
+    
     React.useEffect(() => {
         const handleClick = (e) => {
             const database_nav = document.querySelector(".database_nav")
@@ -59,6 +51,14 @@ export default function DatabaseLayout({ children }) {
             document.removeEventListener('click', handleClick)
         }
     }, [])
+    
+    const connected_tables = ["Inspections", "Routes"] //tables to be connected     
+    const tables = connected_tables.map(table => {
+        return (
+            <VerticalNav href={`/dashboard/tables/${table.toLowerCase()}`} label={<li key={table}>{table}</li>} key={table} />
+        )
+    })
+
 
     return (
         <div className={`database ${mulish.className}`}>
@@ -74,16 +74,6 @@ export default function DatabaseLayout({ children }) {
                 <div className="menu-div">
                     <h2>Table Name</h2>
                 </div>
-                <nav className='table-nav'>
-                    <ul>
-                        <li>
-                            <NavLink href="/dashboard/tables/inspections" label="Registered Records" />
-                        </li>
-                        <li>
-                            <NavLink href="/dashboard/tables/inspections/add-records" label="Add Record" />
-                        </li>
-                    </ul>
-                </nav>
                 {children}
             </div>
         </div>

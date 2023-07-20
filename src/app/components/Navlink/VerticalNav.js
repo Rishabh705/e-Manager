@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 export default function VerticalNav ({ href, label }){
   const pathname = usePathname()
-  const isActive = pathname === href
+  const isActive = pathname.includes(href)
 
   const active = {
     fontWeight:600,

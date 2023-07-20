@@ -68,7 +68,7 @@ export default function RecordDetails({ params }) {
   }
 
   function change() {
-    router.push("/dashboard/inspections")
+    router.push("/dashboard/tables/inspections")
   }
   async function handleDelete() {
     try {
